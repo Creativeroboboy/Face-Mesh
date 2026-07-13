@@ -29,7 +29,7 @@ def main():
         print("[WARNING] Hardware camera not detected. Running simulation mode with fallback frames.")
     else:
         print("[SUCCESS] Live camera stream connected.")
-        print("-> Hold a green object in front of the lens to see it tracked.")
+        print("-> Hold a red object in front of the lens to see it tracked.")
     
     print("-> Press 'q' inside a video window frame to exit.")
 
@@ -90,7 +90,7 @@ def main():
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 3)
                 
                 # Stamp status notification labels
-                cv2.putText(frame, "TRACKING GREEN TARGET", (x, y - 10),
+                cv2.putText(frame, "TRACKING RED TARGET", (x, y - 10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
 
         # 8. Display Output States
