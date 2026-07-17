@@ -1,6 +1,0 @@
-opencv-python
-numpy
-pytesseract
-Pillow
-easyocr
-ultralytics
